@@ -4,9 +4,9 @@ import styles from './Itens.module.scss';
 import { useEffect, useState } from 'react';
 
 interface Props {
-    busca: string;
-    filtro: number | null;
-    ordenador: string;
+  busca: string;
+  filtro: number | null;
+  ordenador: string;
 }
 
 export default function Itens(props: Props) {
@@ -51,9 +51,8 @@ export default function Itens(props: Props) {
   return (
     <div className={styles.itens}>
       {lista.map((item) => (
-        <div>
+        <div key={item.id}>
           <Item
-            key={item.id}
             {...item}
           />
         </div>
