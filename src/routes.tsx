@@ -9,7 +9,7 @@ import Sobre from 'pages/Sobre';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function AppRouter() {
-  return(
+  return (
     <main className='container'>
       <Router>
         <Menu />
@@ -18,9 +18,9 @@ export default function AppRouter() {
             <Route index element={<Inicio />} />
             <Route path='cardapio' element={<Cardapio />} />
             <Route path='sobre' element={<Sobre />} />
-            <Route path='prato/:id' element={<Prato />} />
           </Route>
-          <Route path='*' element={<NotFound />} />          
+          <Route path='prato/:id' element={<Prato />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />
       </Router>
