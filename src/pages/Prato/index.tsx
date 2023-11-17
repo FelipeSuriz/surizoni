@@ -22,7 +22,7 @@ export default function Prato() {
             <button className={styles.voltar} onClick={() => navigate(-1)}>
               {'< Voltar'}
             </button>
-            <section className={styles.container}>
+            <div className={styles.container}>
               <h1 className={styles.titulo}>
                 {prato.title}
               </h1>
@@ -35,7 +35,7 @@ export default function Prato() {
                 </p>
                 <TagsPrato {...prato} />
               </div>
-            </section>
+            </div>
           </>
         } />
       </Route>

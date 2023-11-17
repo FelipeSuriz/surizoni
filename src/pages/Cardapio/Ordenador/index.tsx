@@ -12,6 +12,7 @@ interface Props {
 export default function Ordenador({ ordenador, setOrdenador }: Props) {
   const [aberto, setAberto] = useState(false);
   const nomeOrdenador = ordenador && opcoes.find(opcao => opcao.value === ordenador)?.nome;
+  
   return (
     <button
       className={classNames({
